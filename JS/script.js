@@ -32,3 +32,26 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+function confirmarDeposito(event) {
+  event.preventDefault();
+
+  const monto = parseFloat(document.getElementById("monto").value);
+
+  if (monto > 0) {
+    document.getElementById("mensajeExito").classList.remove("d-none");
+    document.getElementById("preguntaOperacion").classList.remove("d-none");
+    document.getElementById("monto").value = "";
+  }
+}
+
+function irAlMenu() {
+  window.location.href = "menu.html";
+}
+
+function irAlLogin() {
+  window.location.href = "login.html";
+}
+
+function deposito(){
+    window.location.href="Depositar.html";
+}

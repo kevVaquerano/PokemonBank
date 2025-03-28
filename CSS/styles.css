@@ -18,3 +18,17 @@ body{
   margin: 20px auto;
 }
 
+.menu-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.saludo-img {
+  width: 60px;
+  margin-left: 15px;
+}
+

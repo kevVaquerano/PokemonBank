@@ -2,12 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <title>Pokemon Bank Menu</title>
          <link rel="stylesheet" href="css/bootstrap.min.css" />
          <link rel="stylesheet" href="css/styles.css" />
-         <script src="script.js"></script>
     </head>
     <body>
-        <h3>ESTE ES EL MENU</h3>
+
+        <div class="menu-container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h4 id="saludo"></h4>
+                <img src="images/pikachu.png" alt="PokeIcono" class="saludo-img">
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-primary btn-block mb-2">Depositar Dinero</button>
+                    <button class="btn btn-info btn-block mb-2">Consultar Saldo</button>
+                    <button class="btn btn-secondary btn-block mb-2">Historial de transacciones</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn btn-danger btn-block mb-2">Retirar Dinero</button>
+                    <button class="btn btn-warning btn-block mb-2">Pagar Servicio</button>
+                    <button class="btn btn-success btn-block mb-2">Mostrar Gráfico</button>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button class="btn btn-dark px-5" onclick="salir()">Salir</button>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

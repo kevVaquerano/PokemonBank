@@ -1,12 +1,14 @@
+//Esta función me ayuda a verificar si el pin es correcto
 function validarPIN(event){
     event.preventDefault(); //Detiene el envío del formulario
 
     const pin = document.getElementById("pin").value;
 
     if(pin == "1234"){
-        window.location.href = "menu.html"; //Redirige si el pin es correcto
+        window.location.href = "menu.html"; //Redirige a "MENU" si el pin es correcto
     } else {
         alert("PIN incorrecto"); //Muestra una alerta si el PIN es incorrecto
+        document.getElementById("pin").value = "";
     }
 }
 
@@ -26,7 +28,7 @@ window.addEventListener("DOMContentLoaded", function () {
     else if (hora >= 12 && hora < 18) saludo = "Buenas tardes";
     else saludo = "Buenas noches";
 
-    saludoTag.textContent = `${saludo}, ${nombreUsuario} 👋`;
+    saludoTag.textContent = `${saludo}, ${nombreUsuario}`;
   }
 });
 
